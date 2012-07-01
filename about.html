@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Acerca de Photo Tour @WayraCo #DeveloperDay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="David Cespedes @david6p2">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body onload="inicio()">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Photo Tour</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li class="active"><a href="#">Acerca de</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div><!--/.navbar-inner -->
+    </div><!--/.navbar navbar-fixed-top -->
+
+    <div class="container">
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span12"><!--.Div de About -->
+          <h1>Acerca de Photo Tour</h1>
+          <p>Photo Tour es una aplicación creada para el Wayra Developer Day de Mayo del 2012.</p>
+          <h2>Descripción del Valor Agregado</h2>
+          <p>La idea fue crear una aplicación que le sirva a los turistas cuando están en una ciudad que no conozcan, para que al abrirla en sus teléfonos móviles los geo localice y les muestre lugares de interés que se encuentren 10 Km a la redonda. Esto debido a que muchas veces cuando se viaja, especialmente en viajes de trabajo, la gente prefiere quedarse en el hotel pues comúnmente no conoce que lugares turísticos tiene cerca para poder visitar.</p>
+          <p>Aunque actualmente no esta funcionando con Geo localización, por temas de tiempo en el desarrollo, si se puede simular dando clic sobre diferentes puntos del mapa seguido de lo cual empezaran a aparecer las fotos de lugares cercanos.</p>
+          <h2>API usadas</h2>
+          <p>Se utilizo el API de Google Maps para el Mapa y el API de Flickr para buscar Fotos y por medio de JSONP generar las URL de las imágenes de las primeras 5 fotos de lugares que se encuentren 10 km a la redonda de la ubicación marcada. Falto usar el API de Geo localización de HTML5.</p>
+          <h2>Lenguaje usado, librerías y frameworks</h2>
+          <p>Esta aplicación fue creada usando HTML5, CSS3, JavaScript puro y también jQuery.<br>
+            Como &ldquo;Framework&rdquo;, si así se puede llamar, se uso Twitter Bootstrap, que le permite adaptarse a cualquier dispositivo mediante responsive design. </p>
+          <h2>¿Que se aprendió?</h2>
+          <p>Mas allá de participar en el concurso de @WayraCo, fue de gran aprendizaje esta aplicación, especialmente en como tratar llamadas JSONP desde otros dominios.</p>
+          <h2>¿Que queda pendiente?</h2>
+          <p>Queda pendiente la geo localización, una autenticación por medio de alguna API de Facebook, Twitter, etc, Capacidad para poder puntuar las fotos, trazar ruta recorrida en el mapa y almacenarla por local storage o en alguna base de datos para su posterior consulta si se quiere saber por donde se anduvo en determinada ciudad.</p>
+        </div>
+        <!--/.Div de About -->
+      </div><!-- end row 1 -->
+      <br/>
+      <hr>
+      <footer>
+        <p>&copy; <a href="http://www.cardcloud.com/davidcespedes">David Andres Cespedes</a> 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
