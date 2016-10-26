@@ -20,13 +20,13 @@ function inicio() {
 			p.innerHTML = "(" + puntos[i].lat() + ", " + puntos[i].lng() + ") " + i;
 			valores.appendChild(p);*/
 			ponerMarca(event.latLng);
-			var consulta = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f14ddb838d90a8af5a03b62d17031f76&min_taken_date=1998-01-01&lat=" + puntos[i].lat() + "&lon="+ puntos[i].lng() +"&radius=10&radius_units=km&per_page=5&format=json&nojsoncallback=1";
+			var consulta = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f14ddb838d90a8af5a03b62d17031f76&min_taken_date=1998-01-01&lat=" + puntos[i].lat() + "&lon="+ puntos[i].lng() +"&radius=10&radius_units=km&per_page=5&format=json&nojsoncallback=1";
 			i++;
 			$.getJSON(consulta,
 				function(data) {
 				  	$.each(data.photos.photo, 
 					  	function(i,photo){
-						  	var imagen = "http://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_q.jpg";
+						  	var imagen = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_q.jpg";
 					      	$("<img/>").attr("src", imagen).prependTo("#images");
 						}
 					);
